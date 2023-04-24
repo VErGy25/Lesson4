@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="241dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        app:icon="@android:drawable/ic_media_pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.541"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        app:icon="@android:drawable/ic_media_rew"
+        app:layout_constraintEnd_toStartOf="@+id/pause"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        app:icon="@android:drawable/ic_media_ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/pause"
+        tools:layout_editor_absoluteY="545dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
